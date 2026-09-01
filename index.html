@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>A Special Wish For You ❤️</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================================
+         BACKGROUND MUSIC 🎵
+    ========================================== -->
+
+    <audio
+        id="backgroundMusic"
+        loop
+        preload="auto"
+    >
+
+        <source
+            src="music.mp3"
+            type="audio/mpeg"
+        >
+
+        Your browser does not support audio.
+
+    </audio>
+
+
+
+    <!-- =========================================
+         OPENING SCREEN
+    ========================================== -->
+
+    <section
+        class="opening"
+        id="opening"
+    >
+
+        <div class="stars"></div>
+
+
+        <div class="opening-content">
+
+            <p class="small-text">
+                I made something special for you...
+            </p>
+
+
+            <h1>
+                ✨ A Little Surprise ✨
+            </h1>
+
+
+            <button onclick="openSurprise()">
+                Open Your Surprise 💖
+            </button>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================================
+         MAIN WEBSITE
+    ========================================== -->
+
+    <main
+        id="mainContent"
+        class="hidden"
+    >
+
+
+
+        <!-- =====================================
+             HERO SECTION
+        ====================================== -->
+
+        <section class="hero">
+
+            <p class="subtitle">
+                For Someone Very Special ❤️
+            </p>
+
+
+            <h1>
+
+                Happy Birthday,
+
+                <span id="name">
+                    Tanvi (Wifey ❤️ )
+                </span>
+
+                🎂
+
+            </h1>
+
+
+            <p class="hero-text">
+
+                Today is all about celebrating you
+                and the beautiful person you are.
+
+            </p>
+
+        </section>
+
+
+
+        <!-- =====================================
+             PHOTO COLLAGE
+        ====================================== -->
+
+        <section class="section collage-section">
+
+
+            <h2>
+                Beautiful Memories 📸
+            </h2>
+
+
+            <p class="section-text">
+
+                Some moments are too special
+                to be forgotten.
+
+            </p>
+
+
+
+            <div class="collage">
+
+
+                <div class="photo photo1">
+
+                    <img
+                        src="images/pic1.jpg"
+                        alt="Memory 1"
+                    >
+
+                </div>
+
+
+
+                <div class="photo photo2">
+
+                    <img
+                        src="images/pic2.jpg"
+                        alt="Memory 2"
+                    >
+
+                </div>
+
+
+
+                <div class="photo photo3">
+
+                    <img
+                        src="images/pic3.jpg"
+                        alt="Memory 3"
+                    >
+
+                </div>
+
+
+
+                <div class="photo photo4">
+
+                    <img
+                        src="images/pic4.jpg"
+                        alt="Memory 4"
+                    >
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================
+             SLIDESHOW
+        ====================================== -->
+
+        <section
+            class="section slideshow-section"
+        >
+
+
+            <h2>
+                Our Memories 🎞️
+            </h2>
+
+
+
+            <div class="slideshow">
+
+
+                <img
+                    src="images/pic1.jpg"
+                    alt="Memory 1"
+                >
+
+
+                <img
+                    src="images/pic2.jpg"
+                    alt="Memory 2"
+                >
+
+
+                <img
+                    src="images/pic3.jpg"
+                    alt="Memory 3"
+                >
+
+
+                <img
+                    src="images/pic4.jpg"
+                    alt="Memory 4"
+                >
+
+
+                <img
+                    src="images/pic5.jpg"
+                    alt="Memory 5"
+                >
+
+
+                <img
+                    src="images/pic6.jpg"
+                    alt="Memory 6"
+                >
+
+
+
+                <button
+                    class="prev"
+                    onclick="previousSlide()"
+                >
+
+                    ❮
+
+                </button>
+
+
+
+                <button
+                    class="next"
+                    onclick="nextSlide()"
+                >
+
+                    ❯
+
+                </button>
+
+
+            </div>
+
+
+
+            <p id="slideCaption">
+
+                Every picture has a story ❤️
+
+            </p>
+
+
+        </section>
+
+
+
+        <!-- =====================================
+             MESSAGE
+        ====================================== -->
+
+        <section
+            class="section message-section"
+        >
+
+
+            <h2>
+                A Message For You 💌
+            </h2>
+
+
+
+            <div class="message-box">
+
+                <p id="typingText"></p>
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- =====================================
+             TIMELINE
+        ====================================== -->
+
+        <section
+            class="section timeline-section"
+        >
+
+
+            <h2>
+                Some Special Moments 🕰️
+            </h2>
+
+
+
+            <div class="timeline">
+
+
+
+                <div class="memory">
+
+
+                    <span>
+                        01
+                    </span>
+
+
+                    <h3>
+                        First Conversation 💬
+                    </h3>
+
+
+                    <p>
+                        Where our little story started.
+                    </p>
+
+
+                </div>
+
+
+
+                <div class="memory">
+
+
+                    <span>
+                        02
+                    </span>
+
+
+                    <h3>
+                        A Special Memory ✨
+                    </h3>
+
+
+                    <p>
+                        A moment worth remembering forever.
+                    </p>
+
+
+                </div>
+
+
+
+                <div class="memory">
+
+
+                    <span>
+                        03
+                    </span>
+
+
+                    <h3>
+                        Today ❤️
+                    </h3>
+
+
+                    <p>
+                        And here we are,
+                        making another memory.
+                    </p>
+
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================
+             SPECIAL QUESTION
+        ====================================== -->
+
+        <section
+            class="section question-section"
+        >
+
+
+            <p class="subtitle">
+                One Last Thing...
+            </p>
+
+
+
+            <h2>
+                There's something I want to ask you 💖
+            </h2>
+
+
+
+            <button onclick="showQuestion()">
+
+                Click To Continue 🌹
+
+            </button>
+
+
+
+            <div
+                id="questionAnswer"
+                class="hidden answer"
+            >
+
+
+                <h3>
+                    Will you go on a special date with me? ❤️
+                </h3>
+
+
+
+                <button onclick="sayYes()">
+
+                    YES 💕
+
+                </button>
+
+
+            </div>
+
+
+
+            <!-- =================================
+                 DATE BOOKING
+            ================================== -->
+
+            <div
+                id="dateBooking"
+                class="hidden date-booking"
+            >
+
+
+                <h2>
+                    Yay! You said YES! 🥰❤️
+                </h2>
+
+
+                <p>
+                    Now let's plan our special day...
+                </p>
+
+
+
+                <!-- DATE -->
+
+                <div class="booking-step">
+
+
+                    <label for="dateInput">
+
+                        📅 Choose a Date
+
+                    </label>
+
+
+
+                    <input
+                        type="date"
+                        id="dateInput"
+                        onchange="dateSelected()"
+                    >
+
+
+                </div>
+
+
+
+                <!-- LOCATION -->
+
+                <div
+                    id="locationStep"
+                    class="booking-step hidden"
+                >
+
+
+                    <label for="locationInput">
+
+                        📍 Where should we go?
+
+                    </label>
+
+
+
+                    <input
+                        type="text"
+                        id="locationInput"
+                        placeholder="Enter a location..."
+                    >
+
+
+
+                    <button onclick="locationSelected()">
+
+                        Continue 💕
+
+                    </button>
+
+
+                </div>
+
+
+
+                <!-- TIME -->
+
+                <div
+                    id="timeStep"
+                    class="booking-step hidden"
+                >
+
+
+                    <label for="timeInput">
+
+                        ⏰ Choose a Time
+
+                    </label>
+
+
+
+                    <input
+                        type="time"
+                        id="timeInput"
+                    >
+
+
+
+                    <button onclick="confirmDate()">
+
+                        Confirm Our Date ❤️
+
+                    </button>
+
+
+                </div>
+
+
+
+                <!-- CONFIRMATION -->
+
+                <div
+                    id="dateConfirmation"
+                    class="hidden confirmation"
+                >
+
+
+                    <h3>
+
+                        It's a Date! 🥰❤️
+
+                    </h3>
+
+
+
+                    <p id="confirmedDate"></p>
+
+
+
+                    <p>
+
+                        I can't wait to make another
+                        beautiful memory with you. ✨
+
+                    </p>
+
+
+                </div>
+
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- =====================================
+             FINAL SECTION
+        ====================================== -->
+
+        <section class="final-section">
+
+
+            <div class="heart">
+
+                ❤️
+
+            </div>
+
+
+
+            <h2>
+
+                You're Truly Special
+
+            </h2>
+
+
+
+            <p>
+
+                Here's to more smiles,
+                more memories,
+                and many more beautiful moments. ✨
+
+            </p>
+
+
+
+            <p class="signature">
+
+                — From Someone Who Cares ❤️
+
+            </p>
+
+
+        </section>
+
+
+
+    </main>
+
+
+
+    <!-- =========================================
+         JAVASCRIPT
+    ========================================== -->
+
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>
